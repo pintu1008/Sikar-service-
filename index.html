@@ -1,68 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#124734">
-<link rel="manifest" href="/manifest.json">
-<title>सीकर सर्विस | सीकर</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b6b53">
+<title>Sikar Service | घर की सेवाएँ</title>
 <style>
-:root{--green:#124734;--gold:#e7b44b;--bg:#f4f7f4;--ink:#17221c}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;background:var(--bg);color:var(--ink)}
-header{background:linear-gradient(135deg,#124734,#1d6b4b);color:#fff;padding:25px 18px 30px;border-radius:0 0 28px 28px}
-.wrap{max-width:850px;margin:auto;padding:0 15px}.brand{font-size:28px;font-weight:800}.sub{opacity:.9;margin-top:4px}.pill{display:inline-block;margin-top:13px;background:#ffffff20;border:1px solid #ffffff50;padding:6px 11px;border-radius:20px;font-size:13px}
-h2{font-size:20px;margin:22px 0 12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.service{background:#fff;padding:15px 12px;border-radius:15px;box-shadow:0 3px 14px #173b2510;font-weight:650}.service span{display:block;font-size:24px;margin-bottom:6px}
-.card{background:white;border-radius:18px;padding:17px;margin:12px 0;box-shadow:0 4px 18px #173b250d}label{display:block;font-size:14px;font-weight:650;margin:11px 0 5px}input,select,textarea{width:100%;border:1px solid #d8e1da;border-radius:10px;padding:12px;font:inherit;background:#fff}textarea{min-height:78px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}button,.button{background:var(--green);color:#fff;border:0;padding:13px 16px;border-radius:11px;font:inherit;font-weight:750;cursor:pointer;width:100%;margin-top:14px}.secondary{background:#eaf2ec;color:var(--green);text-align:center;text-decoration:none;display:block;padding:12px;border-radius:11px;font-weight:700}.notice{font-size:13px;color:#526157;line-height:1.5}.msg{padding:12px;border-radius:10px;margin-top:12px;display:none}.success{background:#e2f7e8;color:#155d2c}.error{background:#fff0ed;color:#8d2415}footer{text-align:center;padding:25px;color:#66736a;font-size:13px}
-@media(min-width:650px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.brand{font-size:34px}}
+:root{--green:#0b6b53;--green2:#075340;--cream:#f5fbf7;--ink:#17332c;--muted:#60736c;--line:#dce9e1}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--ink)}
+header{background:linear-gradient(135deg,var(--green),#15936d);color:white;padding:24px 18px 30px;border-radius:0 0 26px 26px}
+.wrap{max-width:760px;margin:auto}.brand{font-size:14px;font-weight:700;letter-spacing:.5px;opacity:.9}.hero h1{font-size:30px;line-height:1.2;margin:10px 0}.hero p{margin:0;line-height:1.55;opacity:.95}.pill{display:inline-block;margin-top:15px;background:#ffffff22;border:1px solid #ffffff55;border-radius:99px;padding:7px 12px;font-size:13px}
+main{padding:18px 14px 40px}.section-title{font-size:21px;margin:7px 0 12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.service{background:white;border:1px solid var(--line);border-radius:15px;padding:14px 12px;min-height:100px}.emoji{font-size:25px}.service b{display:block;margin-top:6px}.service small{color:var(--muted)}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:17px;margin-top:22px;box-shadow:0 8px 22px #153e2b0a}.card h2{font-size:21px;margin:0 0 5px}.sub{color:var(--muted);font-size:14px;margin:0 0 16px}
+label{display:block;font-size:14px;font-weight:650;margin:13px 0 6px}input,select,textarea{width:100%;font:inherit;border:1px solid #cbdcd2;border-radius:11px;padding:12px;background:#fff;color:var(--ink)}textarea{min-height:78px;resize:vertical}.btn{display:block;width:100%;border:0;border-radius:12px;background:var(--green);color:#fff;font-size:16px;font-weight:750;padding:14px;margin-top:17px;cursor:pointer}.btn:active{background:var(--green2)}.note{font-size:12px;line-height:1.5;color:var(--muted);margin-top:12px}.features{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.features span{background:#e4f4ea;color:#155b43;border-radius:99px;padding:7px 10px;font-size:12px;font-weight:650}footer{text-align:center;color:var(--muted);font-size:12px;padding:4px 20px 28px}
+@media(min-width:600px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.hero h1{font-size:38px}main{padding-top:24px}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><div class="brand">⛰️ सीकर सर्विस</div><div class="sub">सीकर, राजस्थान में भरोसेमंद घरेलू सेवाएँ</div><div class="pill">📍 अभी केवल सीकर शहर</div></div></header>
+<header><div class="wrap hero">
+<div class="brand">SIKAR SERVICE</div>
+<h1>घर की सेवाएँ,<br>अब एक ही जगह।</h1>
+<p>AC, प्लंबर, इलेक्ट्रिशियन और घर की दूसरी सेवाओं के लिए बुकिंग का आसान तरीका।</p>
+<div class="pill">📍 सीकर, राजस्थान</div>
+<div class="features"><span>✓ आसान बुकिंग</span><span>✓ कई सेवाएँ</span><span>✓ मोबाइल फ्रेंडली</span></div>
+</div></header>
 <main class="wrap">
-<h2>हमारी सेवाएँ</h2>
+<h2 class="section-title">हमारी सेवाएँ</h2>
 <div class="grid">
-<div class="service"><span>❄️</span>AC रिपेयर</div><div class="service"><span>🚰</span>प्लंबर</div><div class="service"><span>💡</span>इलेक्ट्रीशियन</div><div class="service"><span>💧</span>RO रिपेयर</div><div class="service"><span>🧹</span>घर की सफाई</div><div class="service"><span>🎨</span>पेंटिंग</div><div class="service"><span>🧊</span>फ्रिज रिपेयर</div><div class="service"><span>🫧</span>वॉशिंग मशीन</div>
+<div class="service"><div class="emoji">❄️</div><b>AC रिपेयर</b><small>सर्विस और मरम्मत</small></div>
+<div class="service"><div class="emoji">🔧</div><b>प्लंबर</b><small>लीकेज और फिटिंग</small></div>
+<div class="service"><div class="emoji">💡</div><b>इलेक्ट्रिशियन</b><small>वायरिंग और रिपेयर</small></div>
+<div class="service"><div class="emoji">💧</div><b>RO रिपेयर</b><small>फिल्टर और सर्विस</small></div>
+<div class="service"><div class="emoji">🧹</div><b>होम क्लीनिंग</b><small>घर की सफाई</small></div>
+<div class="service"><div class="emoji">🎨</div><b>पेंटिंग</b><small>घर और दीवारें</small></div>
+<div class="service"><div class="emoji">🧊</div><b>फ्रिज रिपेयर</b><small>जाँच और मरम्मत</small></div>
+<div class="service"><div class="emoji">🫧</div><b>वॉशिंग मशीन</b><small>सर्विस और रिपेयर</small></div>
 </div>
-<section class="card" id="book">
-<h2 style="margin-top:0">सर्विस बुक करें</h2>
-<form id="bookingForm">
-<label>आपका नाम *</label><input name="customer_name" required maxlength="100" placeholder="पूरा नाम">
-<div class="row"><div><label>मोबाइल नंबर *</label><input name="phone" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required placeholder="10 अंकों का नंबर"></div><div><label>सीकर का एरिया *</label><input name="area" required placeholder="जैसे पिपराली रोड"></div></div>
-<label>कौन-सी सर्विस चाहिए? *</label><select name="service" required><option value="">सर्विस चुनें</option>{% for service in services %}<option>{{service}}</option>{% endfor %}</select>
-<label>पूरा पता *</label><textarea name="address" required placeholder="मकान नंबर, गली, नज़दीकी जगह"></textarea>
-<div class="row"><div><label>तारीख *</label><input name="preferred_date" type="date" required></div><div><label>समय *</label><select name="preferred_time" required><option value="">समय चुनें</option><option>सुबह 9–12</option><option>दोपहर 12–3</option><option>शाम 3–6</option><option>शाम 6–8</option></select></div></div>
-<label>अतिरिक्त जानकारी (वैकल्पिक)</label><textarea name="notes" placeholder="समस्या के बारे में बताएँ"></textarea>
-<button type="submit">बुकिंग अनुरोध भेजें</button><div class="msg success" id="bookingSuccess"></div><div class="msg error" id="bookingError"></div>
-<p class="notice">बुकिंग अनुरोध भेजने के बाद हमारी टीम आपसे फोन पर संपर्क करके समय और उपलब्धता की पुष्टि करेगी। यह अनुरोध है, तुरंत पुष्टि की गई अपॉइंटमेंट नहीं।</p>
+<section class="card">
+<h2>सेवा बुक करें</h2>
+<p class="sub">जानकारी भरें और WhatsApp पर बुकिंग संदेश भेजें।</p>
+<form id="booking">
+<label for="name">आपका नाम *</label><input id="name" required placeholder="पूरा नाम" autocomplete="name">
+<label for="phone">मोबाइल नंबर *</label><input id="phone" required inputmode="tel" pattern="[0-9 +()-]{10,16}" placeholder="मोबाइल नंबर" autocomplete="tel">
+<label for="service">कौन-सी सेवा चाहिए? *</label>
+<select id="service" required><option value="">सेवा चुनें</option><option>AC रिपेयर</option><option>प्लंबर</option><option>इलेक्ट्रिशियन</option><option>RO रिपेयर</option><option>होम क्लीनिंग</option><option>पेंटिंग</option><option>फ्रिज रिपेयर</option><option>वॉशिंग मशीन रिपेयर</option><option>अन्य</option></select>
+<label for="address">पता / एरिया *</label><textarea id="address" required placeholder="सीकर में अपना एरिया और पता लिखें"></textarea>
+<label for="time">सुविधाजनक समय</label><select id="time"><option>कोई भी समय</option><option>सुबह</option><option>दोपहर</option><option>शाम</option></select>
+<label for="details">समस्या की जानकारी (वैकल्पिक)</label><textarea id="details" placeholder="जैसे AC ठंडा नहीं कर रहा"></textarea>
+<button class="btn" type="submit">WhatsApp पर बुकिंग भेजें ↗</button>
 </form>
+<p class="note">ध्यान दें: बटन WhatsApp में संदेश तैयार करेगा। संदेश भेजने के लिए आपको WhatsApp में Send दबाना होगा। यह शुरुआती वेबसाइट है; ऑनलाइन पेमेंट, OTP और ऑटोमैटिक सर्विस-प्रोवाइडर असाइनमेंट इसमें शामिल नहीं हैं।</p>
 </section>
-<section class="card" id="partner">
-<h2 style="margin-top:0">सर्विस पार्टनर बनें</h2>
-<p class="notice">अगर आप सीकर में कारीगर या सर्विस प्रोवाइडर हैं, तो आवेदन करें। टीम आपसे संपर्क करेगी।</p>
-<form id="partnerForm">
-<label>नाम *</label><input name="name" required placeholder="पूरा नाम">
-<div class="row"><div><label>मोबाइल नंबर *</label><input name="phone" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required placeholder="10 अंकों का नंबर"></div><div><label>आपका एरिया *</label><input name="area" required placeholder="सीकर का एरिया"></div></div>
-<label>आप कौन-सी सेवा देते हैं? *</label><select name="service" required><option value="">सर्विस चुनें</option>{% for service in services %}<option>{{service}}</option>{% endfor %}</select>
-<label>अनुभव / जानकारी</label><textarea name="experience" placeholder="काम का अनुभव, उपलब्ध समय आदि"></textarea>
-<button type="submit">पार्टनर आवेदन भेजें</button><div class="msg success" id="partnerSuccess"></div><div class="msg error" id="partnerError"></div>
-</form></section>
-<section class="card"><h2 style="margin-top:0">संपर्क और सहायता</h2><p class="notice">बुकिंग भेजने के बाद कृपया फोन पर पुष्टि का इंतज़ार करें। सार्वजनिक संपर्क नंबर जोड़ने के बाद यहाँ दिखाया जा सकता है।</p><a class="secondary" href="#book">सर्विस बुक करें</a></section>
 </main>
-<footer>© सीकर सर्विस • सीकर, राजस्थान<br><a href="/admin">एडमिन पैनल</a></footer>
+<footer>© Sikar Service · सीकर, राजस्थान</footer>
 <script>
-async function submitForm(formId, endpoint, successId, errorId){
- const form=document.getElementById(formId), success=document.getElementById(successId), error=document.getElementById(errorId);
- form.addEventListener('submit',async e=>{e.preventDefault();success.style.display='none';error.style.display='none';
- const data=Object.fromEntries(new FormData(form).entries());
- try{const r=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});const result=await r.json();
- if(!r.ok)throw new Error(result.error||'जानकारी भेजी नहीं जा सकी।');
- success.textContent=result.message;success.style.display='block';form.reset();
- }catch(err){error.textContent=err.message||'सर्वर से संपर्क नहीं हो सका। कृपया बाद में कोशिश करें।';error.style.display='block';}
- });
-}
-submitForm('bookingForm','/api/bookings','bookingSuccess','bookingError');
-submitForm('partnerForm','/api/partners','partnerSuccess','partnerError');
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}));}
-const date=document.querySelector('input[name="preferred_date"]');if(date){date.min=new Date().toISOString().slice(0,10);}
+document.getElementById('booking').addEventListener('submit',function(e){
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim();
+ const msg=`*Sikar Service - नई बुकिंग*%0Aनाम: ${encodeURIComponent(v('name'))}%0Aमोबाइल: ${encodeURIComponent(v('phone'))}%0Aसेवा: ${encodeURIComponent(v('service'))}%0Aपता: ${encodeURIComponent(v('address'))}%0Aसमय: ${encodeURIComponent(v('time'))}%0Aसमस्या: ${encodeURIComponent(v('details')||'नहीं बताई')}`;
+ window.open('https://wa.me/?text='+msg,'_blank');
+});
 </script>
 </body></html>
