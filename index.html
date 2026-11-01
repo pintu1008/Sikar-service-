@@ -52,13 +52,13 @@ label{display:block;font-size:14px;font-weight:650;margin:13px 0 6px}input,selec
 <p class="note">ध्यान दें: बटन WhatsApp में संदेश तैयार करेगा। संदेश भेजने के लिए आपको WhatsApp में Send दबाना होगा। यह शुरुआती वेबसाइट है; ऑनलाइन पेमेंट, OTP और ऑटोमैटिक सर्विस-प्रोवाइडर असाइनमेंट इसमें शामिल नहीं हैं।</p>
 </section>
 </main>
-<footer>© Sikar Service · सीकर, राजस्थान</footer>
+<footer><p><a href="https://wa.me/917240421006" style="display:inline-block;background:#0b6b53;color:#fff;text-decoration:none;padding:11px 16px;border-radius:10px;font-weight:700;margin-bottom:12px">WhatsApp पर संपर्क करें: 7240421006</a></p>© Sikar Service · सीकर, राजस्थान</footer>
 <script>
 document.getElementById('booking').addEventListener('submit',function(e){
  e.preventDefault();
  const v=id=>document.getElementById(id).value.trim();
  const msg=`*Sikar Service - नई बुकिंग*%0Aनाम: ${encodeURIComponent(v('name'))}%0Aमोबाइल: ${encodeURIComponent(v('phone'))}%0Aसेवा: ${encodeURIComponent(v('service'))}%0Aपता: ${encodeURIComponent(v('address'))}%0Aसमय: ${encodeURIComponent(v('time'))}%0Aसमस्या: ${encodeURIComponent(v('details')||'नहीं बताई')}`;
- window.open('https://wa.me/?text='+msg,'_blank');
+ window.open('https://wa.me/917240421006?text='+msg,'_blank');
 });
 </script>
 </body></html>
